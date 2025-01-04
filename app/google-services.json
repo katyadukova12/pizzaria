@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "528803873199",
+    "project_id": "pizzaria-281b0",
+    "storage_bucket": "pizzaria-281b0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528803873199:android:a04e2368013153d362ef5a",
+        "android_client_info": {
+          "package_name": "com.example.pizzaria"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrAe7DplRCkKGCCKn9YR4SyYRiA7BMPv8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528803873199:android:c8e29a662558aa5062ef5a",
+        "android_client_info": {
+          "package_name": "com.kati.pizzaria"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrAe7DplRCkKGCCKn9YR4SyYRiA7BMPv8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

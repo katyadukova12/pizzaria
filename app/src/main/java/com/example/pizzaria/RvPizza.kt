@@ -8,7 +8,6 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 
@@ -35,14 +34,14 @@ class MyAdapter(private val pizzaName: List<String>, private val pizzaPrices: Li
         holder.txtPizzaPrice.text = "${pizzaPrices[position]} лв."
         holder.imgPizza.load(imgUrl[position])
 
-//        holder.btnChoosePizza.setOnClickListener(){
-//            val intent = Intent(holder.itemView.context, PizzaDetailsActivity::class.java)
-//            intent.putExtra("pizzaName", pizzaName[position])
-//            intent.putExtra("pizzaIngredient", pizzaIngredients[position])
-//            intent.putExtra("pizzaPrice", pizzaPrices[position])
-//            intent.putExtra("pizzaUrl", imgUrl[position])
-//            holder.itemView.context.startActivity(intent)
-//        }
+        holder.btnChoosePizza.setOnClickListener(){
+            val intent = Intent(holder.itemView.context, PizzaDetailsActivity::class.java)
+            intent.putExtra("pizzaName", pizzaName[position])
+            intent.putExtra("pizzaIngredient", pizzaIngredients[position])
+            intent.putExtra("pizzaPrice", pizzaPrices[position])
+            intent.putExtra("pizzaUrl", imgUrl[position])
+            holder.itemView.context.startActivity(intent)
+        }
 
     }
 

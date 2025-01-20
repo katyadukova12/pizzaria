@@ -8,41 +8,45 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="#FBE8E0"
+        android:background="#FDF8E6"
         android:padding="8dp">
 
-    <TextView
-        android:id="@+id/txtPizzaName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Pizza Name"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtPizzaName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Pizza Name"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/txtIngredients"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ingredients"
-        android:textSize="14sp"
-        android:paddingTop="4dp" />
+        <TextView
+            android:id="@+id/txtIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingredients"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:paddingTop="4dp" />
 
-    <TextView
-        android:id="@+id/txtQuantity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Quantity"
-        android:textSize="14sp"
-        android:paddingTop="4dp" />
+        <TextView
+            android:id="@+id/txtQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:paddingTop="4dp" />
 
-    <TextView
-        android:id="@+id/txtPrice"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Price"
-        android:layout_marginBottom="10dp"
-        android:textSize="14sp"
-        android:paddingTop="4dp" />
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:paddingTop="4dp" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnRemoveFromCart"

@@ -1,6 +1,7 @@
 package com.example.pizzaria
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.FrameLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -31,17 +32,29 @@ class MainActivity : AppCompatActivity() {
                 .commit()
         }
 
+        val cartItems = Cart.cartItems
+        for (item in cartItems) {
+            Log.d("CartItem", "${item.pizzaName}, ${item.ingredients}, ${item.quantity}, ${item.price}")
+        }
+
+
         bottomNavigationView.selectedItemId = R.id.nav_home
 
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_home -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, HomeFragment())
+                        .commit()
                     true
                 }
                 R.id.nav_fav -> {
                     true
                 }
                 R.id.nav_cart -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, CartFragment())
+                        .commit()
                     true
                 }
                 else -> false

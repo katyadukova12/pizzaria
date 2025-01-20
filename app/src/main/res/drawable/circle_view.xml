@@ -7,6 +7,10 @@
         android:width="100dp"
         android:height="100dp" />
 
-    <solid android:color="#D84918" />
+    <gradient
+        android:startColor="#DBB051"
+        android:centerColor="#D27A46"
+        android:endColor="#D84918"
+        android:angle="45" />
 
 </shape>
